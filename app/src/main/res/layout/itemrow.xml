@@ -9,7 +9,10 @@
     android:layout_marginBottom="8dp"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
-    android:foreground="?attr/selectableItemBackground">
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -34,7 +37,7 @@
             />
 
         <TextView
-            android:id="@+id/tv_desc"
+            android:id="@+id/tv_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
@@ -49,10 +52,10 @@
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/action_button"
+            android:id="@+id/btn_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_desc"
+            android:layout_below="@+id/tv_body"
             style="?android:attr/borderlessButtonStyle"
             android:textColor="?attr/colorPrimary"
             android:text="Delete"
